@@ -1,0 +1,47 @@
+importFrom( "grDevices", "dev.interactive" )
+importFrom( "graphics", "abline", "boxplot", "hist", "lines", "par",
+            "plot", "points", "symbols", "title" )
+importFrom( "stats", "prcomp", "dist", "hclust", "cutree", "kmeans",
+            "ecdf", "cor", "var", "lm", "smooth.spline", "predict",
+            "aov", "as.formula", "complete.cases", "na.omit", "fitted.values",			
+            "rnorm",  "runif", "ks.test" )
+importFrom( "utils", "head", "str" )
+			
+import(cluster)
+import(lattice)
+
+export(NUsetup)
+
+export(ltdagg)
+S3method(plot, ltdagg)
+S3method(print, ltdagg)
+
+export(lrcagg)
+S3method(plot, lrcagg)
+S3method(print, lrcagg)
+
+export(ivadj)
+S3method(plot, ivadj)
+S3method(print, ivadj)
+
+export(NUcluster)
+S3method(plot, NUcluster)
+S3method(print, NUcluster)
+
+export(NUcompare)
+
+export(confirm)
+S3method(plot, confirm)
+S3method(print, confirm)
+
+export(KSperm)
+S3method(plot, KSperm)
+S3method(print, KSperm)
+
+export(mlme)
+S3method(plot, mlme)
+S3method(print, mlme)
+
+export(mlme.stats)
+
+export(reveal.data)
